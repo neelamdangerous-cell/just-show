@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snack Haven - Premium Snacks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Snack Haven</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart-icon" id="cart-icon">
+            <span>🛒</span>
+            <span class="cart-count" id="cart-count">0</span>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Snack Haven</h1>
+        <p>Indulge in the finest snacks, crafted with love and quality.</p>
+    </section>
+
+    <main id="home">
+        <h2>Our Premium Snacks</h2>
+        <div class="snacks-grid">
+            <div class="snack-card" data-id="1" data-name="Crunchy Popcorn" data-price="4.99">
+                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop" alt="Crunchy Popcorn">
+                <h3>Crunchy Popcorn</h3>
+                <p>Freshly popped corn with a hint of sea salt.</p>
+                <p class="price">$4.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="snack-card" data-id="2" data-name="Chocolate Chip Cookies" data-price="6.99">
+                <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&h=300&fit=crop" alt="Chocolate Chip Cookies">
+                <h3>Chocolate Chip Cookies</h3>
+                <p>Homemade cookies with rich chocolate chips.</p>
+                <p class="price">$6.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="snack-card" data-id="3" data-name="Mixed Nuts" data-price="8.99">
+                <img src="https://images.unsplash.com/photo-1599599810769-bcde5a160d32?w=400&h=300&fit=crop" alt="Mixed Nuts">
+                <h3>Mixed Nuts</h3>
+                <p>A healthy mix of almonds, walnuts, and cashews.</p>
+                <p class="price">$8.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="snack-card" data-id="4" data-name="Fruit Gummies" data-price="5.49">
+                <img src="https://images.unsplash.com/photo-1582058091505-f87a2e55a40f?w=400&h=300&fit=crop" alt="Fruit Gummies">
+                <h3>Fruit Gummies</h3>
+                <p>Chewy gummies made from real fruit juices.</p>
+                <p class="price">$5.49</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="snack-card" data-id="5" data-name="Cheese Puffs" data-price="3.99">
+                <img src="https://images.unsplash.com/photo-1607478900766-efe13248b125?w=400&h=300&fit=crop" alt="Cheese Puffs">
+                <h3>Cheese Puffs</h3>
+                <p>Light and airy puffs with a cheesy flavor.</p>
+                <p class="price">$3.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="snack-card" data-id="6" data-name="Trail Mix" data-price="7.49">
+                <img src="https://images.unsplash.com/photo-1557800636-894a64c1696f?w=400&h=300&fit=crop" alt="Trail Mix">
+                <h3>Trail Mix</h3>
+                <p>Energy-boosting mix of dried fruits and nuts.</p>
+                <p class="price">$7.49</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>At Snack Haven, we believe in delivering premium quality snacks made with the finest ingredients. From crunchy popcorn to healthy trail mixes, every bite is a delight.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@snackhaven.com | Phone: (123) 456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Snack Haven. All rights reserved.</p>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+            <button id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
